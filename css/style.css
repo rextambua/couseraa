@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    margin: 30px auto 30px; 
+    font-size: 32px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.wrapper{
+    border: 2px solid black;
+    padding: 10pxpx;
+    position: relative;
+    margin: 15px; 
+    background-color: rgba(0, 0, 0, 0.466);
+}
+span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+}
+.t1{
+    background-color: rgba(255, 0, 0, 0.726);
+}
+.t2{
+    background-color: rgba(0, 204, 255, 0.623);
+}
+.t3{
+    background-color:rgba(115, 128, 0, 0.733);
+}
+p{
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 32px;
+}
+/* pc */
+@media (min-width:992px){
+.col4{
+    float: left;
+    width: 33.33%;
+    }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width:991px) {
+.col6{
+    float: left;
+    width: 50%;
+}
+.col8{
+    float: left; 
+    width:100%;
+} 
+}
+/* mobile */
+@media (max-width: 767px) {
+.col12{
+    float: left;
+    width: 100%;
+}
+}
